@@ -1,6 +1,12 @@
 <template>
     <div id="app">
-        <span>ssss</span>
+        <el-container class="app-out-pannel">
+            <el-header class="sys-header">一张图系统</el-header>
+            <el-container class="app-contebt-pannel">
+                <el-aside width="200px" class="sys-menu">左侧标题</el-aside>
+                <el-main>主要</el-main>
+            </el-container>
+        </el-container>
     </div>
 </template>
 
@@ -19,5 +25,18 @@ body,
     width: 100%;
     height: 100%;
     margin: 0%;
+}
+.app-out-pannel,
+.app-contebt-pannel {
+    height: 100%;
+}
+.sys-header {
+    background-color: #409eff;
+    line-height: 60px;
+    color: aliceblue;
+    font-size: 20px;
+}
+.sys-menu {
+    background-color: beige;
 }
 </style>
